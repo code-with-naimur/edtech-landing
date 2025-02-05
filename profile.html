@@ -20,12 +20,14 @@
     <nav
       class="fixed top-0 lef-0 w-full right-0 h-[var(--topbar-height)] z-[100] bg-primary flex"
     >
-      <div class="w-[var(--sidebar-width)] h-full border-b border-primary px-6">
+      <div
+        class="min-w-[var(--sidebar-width)] w-[var(--sidebar-width)] border-r h-full border-b border-primary px-6"
+      >
         <a href="index.html">
           <h1 class="text-6xl font-bold heading-icon">H</h1>
         </a>
       </div>
-      <div class="w-full h-full border border-primary border-t-0 border-r-0">
+      <div class="w-full h-full border-primary border-b">
         <div class="flex items-center justify-between h-full px-6 py-5">
           <div class="flex flex-col">
             <h1 class="text-3xl text-text-primary font-semibold">
@@ -58,6 +60,64 @@
             </div>
           </div>
         </div>
+      </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <nav
+      class="fixed top-[var(--topbar-height)] left-0 w-[var(--sidebar-width)] h-full border-r border-primary"
+    >
+      <!-- Nav Menu -->
+      <div class="flex flex-col gap-y-4 mt-6 px-4">
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full hover:bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-solid fa-house size-5"></i>
+          <p class="font-medium">Dashboard</p>
+        </div>
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full hover:bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-solid fa-book-open-reader size-5"></i>
+          <p class="font-medium">My Courses</p>
+        </div>
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full hover:bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-regular fa-note-sticky size-5"></i>
+          <p class="font-medium">Notes</p>
+        </div>
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line size-5"></i>
+          <p class="font-medium">Progress Tracker</p>
+        </div>
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full hover:bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-solid fa-gear size-5"></i>
+          <p class="font-medium">Settings</p>
+        </div>
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full hover:bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-regular fa-circle-question size-5"></i>
+          <p class="font-medium">Help</p>
+        </div>
+        <div
+          class="flex items-center gap-x-2 px-6 py-2 rounded-full hover:bg-[var(--primary-light)] text-text-primary cursor-pointer"
+        >
+          <i class="fa-solid fa-arrow-right-from-bracket size-5"></i>
+          <p class="font-medium">Logout</p>
+        </div>
+      </div>
+
+      <div class="mt-12 flex items-center justify-center px-8">
+        <button class="btn btn-primary w-full">
+          <i class="fa-solid fa-user-plus mr-3"></i>
+          Friends
+        </button>
       </div>
     </nav>
   </body>

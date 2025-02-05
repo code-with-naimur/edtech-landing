@@ -26,6 +26,8 @@
 
 /* Dark mode variables */
 body.dark-mode {
+  --primary-light: #a042c6;
+
   --text-primary: #ffffff;
   --text-secondary: #b8b8b8;
 
