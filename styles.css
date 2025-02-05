@@ -108,7 +108,19 @@ body.dark-mode {
   border-color: var(--gray-secondary);
 }
 
+/* Landing Page */
 .star-icon {
   filter: invert(53%) sepia(79%) saturate(4788%) hue-rotate(244deg)
     brightness(97%) contrast(100%);
+}
+
+.heading-icon {
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
