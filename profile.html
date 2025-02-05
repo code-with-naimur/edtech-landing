@@ -130,7 +130,7 @@
         <form
           class="mt-6 rounded-xl flex flex-col gap-y-6 p-6 bg-form-bg border border-form shadow-sm max-w-3xl"
         >
-          <div class="flex items-center gap-6">
+          <div class="flex flex-col lg:flex-row gap-6">
             <div class="input-group">
               <label for="first-name">First Name</label>
               <input
@@ -170,7 +170,7 @@
             />
           </div>
 
-          <div class="flex gap-x-6">
+          <div class="flex flex-col md:flex-row gap-x-6 gap-y-4">
             <img
               src="./assets/common/avatar.jpg"
               class="size-16 rounded-full aspect-square object-cover"
@@ -181,13 +181,15 @@
               <div
                 class="border border-primary border-opacity-50 rounded-xl px-4 py-3"
               >
-                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <i class="fa-solid fa-cloud-arrow-up text-text-secondary"></i>
               </div>
               <div
                 class="flex flex-col gap-y-1 text-center justify-center items-center"
               >
                 <p class="text-text-secondary">
-                  <span class="text-[var(--primary)] font-medium"
+                  <span
+                    class="text-[var(--primary)] font-medium cursor-pointer"
+                    role="button"
                     >Click to upload</span
                   >
                   or drag and drop
