@@ -130,3 +130,51 @@ body.dark-mode {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  color: white;
+  border: 1px solid var(--primary);
+
+  &:hover {
+    background: linear-gradient(
+      to top,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
+  }
+}
+
+.btn-white {
+  background-color: white;
+  color: #525252;
+  border: 1px solid #525252;
+
+  &:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid var(--primary);
+
+  &:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+}
