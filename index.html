@@ -15,8 +15,96 @@
     />
     <script src="./script.js" defer></script>
   </head>
-  <body class="bg-primary">
-    <h1 class="text-text-primary">Hello World</h1>
-    <!-- <button id="darkModeToggle">Toggle Dark Mode</button> -->
+  <body class="bg-gray-900">
+    <div class="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip relative">
+      <!-- Grain effect -->
+      <div
+        class="fixed inset-0 -z-30 opacity-5 h-screen w-screen bg-fixed"
+        style="background-image: url('./assets/landing-page/grain.jpg')"
+      ></div>
+
+      <!-- Rings effect -->
+      <div
+        class="size-[620px] absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-purple-500/10 shadow-[0_0_80px_inset] shadow-emerald-300/5"
+      ></div>
+      <div
+        class="size-[820px] absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-purple-500/10 shadow-[0_0_80px_inset] shadow-emerald-300/5"
+      ></div>
+      <div
+        class="size-[1020px] absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-purple-500/10 shadow-[0_0_80px_inset] shadow-emerald-300/5"
+      ></div>
+      <div
+        class="size-[1220px] absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-purple-500/10 shadow-[0_0_80px_inset] shadow-emerald-300/5"
+      ></div>
+
+      <!-- Stars Icons -->
+      <div class="absolute left-[38%] top-[10%]">
+        <img
+          src="./assets/icons/star.svg"
+          class="size-[48px] rotate-90 star-icon"
+          alt="star"
+        />
+      </div>
+      <div class="absolute left-[70%] top-[15%]">
+        <img
+          src="./assets/icons/star.svg"
+          class="size-[32px] rotate-90 star-icon"
+          alt="star"
+        />
+      </div>
+      <div class="absolute left-[16%] top-[70%]">
+        <img
+          src="./assets/icons/star.svg"
+          class="size-[112px] rotate-90 star-icon"
+          alt="star"
+        />
+      </div>
+
+      <div class="container mx-auto">
+        <div class="flex flex-col items-center">
+          <img
+            src="./assets/landing-page/memoji-computer.png"
+            class="size-[100px]"
+            alt="person peeking from behind laptop"
+          />
+
+          <div
+            class="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center rounded-lg gap-4"
+          >
+            <div class="bg-green-500 size-2.5 rounded-full"></div>
+            <div class="text-sm font-medium">Available for new projects</div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto">
+          <h1
+            class="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide"
+          >
+            Building Exceptional User Experiences
+          </h1>
+          <p class="mt-4 text-center text-white/60 md:text-lg">
+            I specialize in transforming designs into functional, high
+            performing web applications. Let's discuss next projects
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row md:justify-center items-center mt-8 gap-4"
+        >
+          <button
+            class="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+          >
+            <span class="font-semibold">Explore My Work</span>
+            <img src="arrow-down.svg" class="size-4" alt="arrow down" />
+          </button>
+          <button
+            class="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl"
+          >
+            <span>👋</span>
+            <span class="font-semibold">Let's Connect</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

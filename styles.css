@@ -107,3 +107,8 @@ body.dark-mode {
 .border-gray-secondary {
   border-color: var(--gray-secondary);
 }
+
+.star-icon {
+  filter: invert(53%) sepia(79%) saturate(4788%) hue-rotate(244deg)
+    brightness(97%) contrast(100%);
+}
