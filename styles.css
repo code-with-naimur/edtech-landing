@@ -178,3 +178,22 @@ body.dark-mode {
     color: white;
   }
 }
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 36px;
+  border-radius: 9999px;
+  background-color: var(--gray-primary);
+  padding: 0 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-switch > div {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background-color: white;
+}

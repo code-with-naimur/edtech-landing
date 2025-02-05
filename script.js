@@ -17,8 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
     themeSwitch.classList.add('justify-end')
   }
 })
-
-// You can call this function on a button click or any other event
-document
-  .getElementById('darkModeToggle')
-  .addEventListener('click', toggleDarkMode)
