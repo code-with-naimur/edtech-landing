@@ -120,5 +120,102 @@
         </button>
       </div>
     </nav>
+
+    <!-- Dashboard Content -->
+    <div class="pl-[var(--sidebar-width)] pt-[var(--topbar-height)]">
+      <div class="p-12">
+        <p class="text-text-primary font-semibold">Personal Info</p>
+        <p class="text-text-secondary">Update your personal details.</p>
+
+        <form
+          class="mt-6 rounded-xl flex flex-col gap-y-6 p-6 bg-form-bg border border-form shadow-sm max-w-3xl"
+        >
+          <div class="flex items-center gap-6">
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input
+                name="first-name"
+                type="text"
+                id="first-name"
+                placeholder="Enter first name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input
+                name="last-name"
+                type="text"
+                id="last-name"
+                placeholder="Enter last name"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Enter email address"
+            />
+          </div>
+          <div class="input-group">
+            <label for="address">Address</label>
+            <input
+              name="address"
+              type="text"
+              id="address"
+              placeholder="Enter your address"
+            />
+          </div>
+
+          <div class="flex gap-x-6">
+            <img
+              src="./assets/common/avatar.jpg"
+              class="size-16 rounded-full aspect-square object-cover"
+            />
+            <div
+              class="border border-primary border-dashed rounded-xl p-4 w-full flex flex-col gap-y-4 items-center justify-center"
+            >
+              <div
+                class="border border-primary border-opacity-50 rounded-xl px-4 py-3"
+              >
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <div
+                class="flex flex-col gap-y-1 text-center justify-center items-center"
+              >
+                <p class="text-text-secondary">
+                  <span class="text-[var(--primary)] font-medium"
+                    >Click to upload</span
+                  >
+                  or drag and drop
+                </p>
+                <p class="text-text-secondary text-sm">
+                  SVG, PNG, JPG or GIF (max. 800x400px)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="bio">Bio</label>
+            <textarea
+              name="bio"
+              type="text"
+              id="bio"
+              placeholder="Write details about you"
+              rows="6"
+            ></textarea>
+          </div>
+
+          <div class="flex items-center justify-end gap-x-4">
+            <button class="btn btn-white">Cancel</button>
+            <button class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

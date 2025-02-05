@@ -19,6 +19,10 @@
   --gray-primary: #b5b5b5;
   --gray-secondary: #e3e3e3;
 
+  --form-bg: #ffffff;
+  --form-input: #ffffff;
+  --form-border: #aebfd5;
+
   --sidebar-width: 272px;
   --second-sidebar-width: 330px;
   --topbar-height: 108px;
@@ -34,11 +38,15 @@ body.dark-mode {
   --bg-primary: #474747;
   --bg-secondary: #2e2e2e;
 
-  --border-primary: #eaecf0;
+  --border-primary: #595a5c;
   --border-secondary: transparent;
 
   --gray-primary: #b5b5b5;
   --gray-secondary: #474747;
+
+  --form-bg: #3d3d3d;
+  --form-input: #474747;
+  --form-border: transparent;
 }
 
 /* Text */
@@ -113,6 +121,19 @@ body.dark-mode {
 
 .border-gray-secondary {
   border-color: var(--gray-secondary);
+}
+
+/* Form */
+.bg-form-bg {
+  background-color: var(--form-bg);
+}
+
+.bg-form-input {
+  background-color: var(--form-input);
+}
+
+.border-form {
+  border-color: var(--form-border);
 }
 
 /* Landing Page */
@@ -198,4 +219,31 @@ body.dark-mode {
   height: 24px;
   border-radius: 9999px;
   background-color: white;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group > label {
+  display: block;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.input-group > input,
+.input-group > textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--form-border);
+  background-color: var(--form-input);
+  color: var(--text-primary);
+}
+
+.input-group > input::placeholder,
+.input-group > textarea::placeholder {
+  color: var(--text-secondary);
 }
