@@ -18,20 +18,25 @@
 
   --gray-primary: #b5b5b5;
   --gray-secondary: #e3e3e3;
+
+  --sidebar-width: 272px;
+  --second-sidebar-width: 330px;
+  --topbar-height: 108px;
 }
 
 /* Dark mode variables */
 body.dark-mode {
-  --text-primary: #e0e0e0;
-  --text-secondary: #b0b0b0;
+  --text-primary: #ffffff;
+  --text-secondary: #b8b8b8;
 
-  --bg-primary: #121212;
-  --bg-secondary: #1a1a1a;
+  --bg-primary: #474747;
+  --bg-secondary: #2e2e2e;
 
-  --border-primary: #4a4a4a;
-  --border-secondary: #3a3a3a;
+  --border-primary: #eaecf0;
+  --border-secondary: transparent;
 
-  --error-primary: #ff5e5e;
+  --gray-primary: #b5b5b5;
+  --gray-secondary: #474747;
 }
 
 /* Text */
@@ -114,6 +119,7 @@ body.dark-mode {
     brightness(97%) contrast(100%);
 }
 
+/* Common */
 .heading-icon {
   background: linear-gradient(
     to bottom,
