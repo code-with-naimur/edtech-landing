@@ -251,3 +251,67 @@ body.dark-mode {
 .input-group > textarea::placeholder {
   color: var(--text-secondary);
 }
+
+.nested-menu-item > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nested-menu-item > div > i {
+  font-size: 18px;
+}
+
+.nested-menu-item > div > p {
+  font-weight: 500;
+}
+
+.nested-menu-item > div:first-child:hover {
+  background-color: var(--gray-secondary);
+}
+
+.nested-menu-item.text-primary > div:first-child {
+  color: var(--primary);
+}
+
+.menu-divider {
+  width: 100%;
+  margin: 16px 0;
+  height: 2px;
+  background-color: var(--divider);
+}
+
+.accordion {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--border-secondary);
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  padding: 0 16px;
+}
+
+.accordion-content.open {
+  height: auto;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.rotate {
+  transform: rotate(-180deg);
+}

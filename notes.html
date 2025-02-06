@@ -74,6 +74,81 @@
     <!-- Side Navbar -->
     <nav
       class="fixed top-[var(--topbar-height)] left-0 w-[var(--sidebar-width)] h-full border-r border-primary"
-    ></nav>
+    >
+      <div class="px-2 py-6">
+        <div class="nested-menu-item">
+          <div>
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>Main Menu</p>
+          </div>
+        </div>
+        <div class="menu-divider"></div>
+
+        <div class="nested-menu-item accordion">
+          <div class="accordion-header">
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            <i class="fa-solid fa-book"></i>
+            <p>Mauro's Notebook</p>
+          </div>
+
+          <div class="accordion-content">
+            <div class="nested-menu-item pl-4">
+              <div>
+                <i class="fa-regular fa-note-sticky"></i>
+                <p>Quick Notes</p>
+              </div>
+            </div>
+
+            <div class="nested-menu-item pl-4 accordion">
+              <div class="accordion-header">
+                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                <p>New Section Group</p>
+              </div>
+              <div class="nested-menu-item pl-4 accordion-content">
+                <div>
+                  <i class="fa-solid fa-user-graduate"></i>
+                  <p>School</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nested-menu-item text-primary">
+          <div>
+            <i class="fa-solid fa-plus"></i>
+            <p>New Section</p>
+          </div>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <div class="nested-menu-item accordion">
+          <div class="accordion-header">
+            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            <i class="fa-solid fa-book"></i>
+            <p>My School Notebook</p>
+          </div>
+
+          <div class="accordion-content">
+            <div class="nested-menu-item pl-4">
+              <div>
+                <i class="fa-regular fa-note-sticky"></i>
+                <p>Collaboration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nested-menu-item text-primary">
+          <div>
+            <i class="fa-solid fa-plus"></i>
+            <p>New Section</p>
+          </div>
+        </div>
+
+        <div class="menu-divider"></div>
+      </div>
+    </nav>
   </body>
 </html>

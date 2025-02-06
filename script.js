@@ -16,4 +16,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeSwitch = document.querySelector('.theme-switch')
     themeSwitch.classList.add('justify-end')
   }
+
+  // Accordion functionality
+  const accordionHeaders = document.querySelectorAll('.accordion-header')
+  accordionHeaders.forEach(header => {
+    const content = header.nextElementSibling
+    const icon = header.querySelector('.accordion-icon')
+
+    header.addEventListener('click', event => {
+      event.stopPropagation() // Prevent event from bubbling up to parent accordions
+
+      const isOpen = content.classList.contains('open')
+      const allContents =
+        header.parentElement.parentElement.querySelectorAll(
+          '.accordion-content'
+        )
+      const allIcons =
+        header.parentElement.parentElement.querySelectorAll('.accordion-icon')
+
+      // Close all sibling accordions
+      allContents.forEach(c => {
+        if (c !== content) {
+          c.classList.remove('open')
+        }
+      })
+
+      allIcons.forEach(i => {
+        if (i !== icon) {
+          i.classList.remove('rotate')
+        }
+      })
+
+      // Toggle the clicked accordion
+      if (isOpen) {
+        content.classList.remove('open')
+        icon.classList.remove('rotate')
+      } else {
+        content.classList.add('open')
+        icon.classList.add('rotate')
+      }
+    })
+  })
 })
