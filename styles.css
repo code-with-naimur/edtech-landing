@@ -23,6 +23,8 @@
   --form-input: #ffffff;
   --form-border: #aebfd5;
 
+  --divider: #d0dae7;
+
   --sidebar-width: 272px;
   --second-sidebar-width: 330px;
   --topbar-height: 108px;
@@ -47,6 +49,8 @@ body.dark-mode {
   --form-bg: #3d3d3d;
   --form-input: #474747;
   --form-border: transparent;
+
+  --divider: #aebfd5;
 }
 
 /* Text */
