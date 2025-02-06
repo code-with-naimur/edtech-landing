@@ -73,7 +73,7 @@
 
     <!-- Side Navbar -->
     <nav
-      class="fixed top-[var(--topbar-height)] left-0 w-[var(--sidebar-width)] h-full border-r border-primary"
+      class="fixed top-[var(--topbar-height)] left-0 w-[var(--sidebar-width)] h-full border-r border-primary h-screen overflow-y-auto"
     >
       <div class="px-2 py-6">
         <div class="nested-menu-item">
@@ -150,5 +150,53 @@
         <div class="menu-divider"></div>
       </div>
     </nav>
+
+    <!-- Secondary Side Navbar -->
+    <nav
+      class="fixed top-[var(--topbar-height)] left-[var(--sidebar-width)] w-[var(--second-sidebar-width)] h-full border-r-3 border-primary h-screen overflow-y-auto"
+    >
+      <div class="p-8">
+        <div class="flex items-center justify-between gap-x-5">
+          <button class="btn border-[var(--primary)] border bg-white">
+            <i class="fa-solid fa-pen-to-square"></i>
+            Add Page
+          </button>
+          <i class="fa-solid fa-filter text-xl cursor-pointer"></i>
+        </div>
+
+        <button class="btn bg-gray-secondary w-full mt-6 text-text-secondary">
+          Printout
+        </button>
+      </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div
+      class="pl-[calc(var(--sidebar-width)+var(--second-sidebar-width))] pt-[var(--topbar-height)]"
+    >
+      <div class="p-8 flex flex-col gap-y-6">
+        <div class="flex items-center justify-between gap-x-6">
+          <h2 class="text-3xl text-text-primary font-semibold">Printout</h2>
+          <i
+            class="fa-solid fa-up-right-and-down-left-from-center text-xl cursor-pointer"
+          ></i>
+        </div>
+
+        <div class="flex items-center gap-x-6 text-text-secondary font-medium">
+          <p>Tuesday, January 21, 2020</p>
+          <p>1.32pm</p>
+        </div>
+
+        <div class="border border-t-6 border-gray-secondary p-4">
+          <p class="font-medium text-text-primary">
+            OneNote allows users to take notes in various ways, including text,
+            images, audio, and video. The notes can be organized into notebooks,
+            sections, and pages, making it easy to find what you need. The app
+            also allows you to share your notes to collaborate on projects or
+            share information
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
